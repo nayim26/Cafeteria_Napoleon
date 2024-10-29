@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rye&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.heading {
+  background: url(../img/fondoParis.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+.heading h1 {
+  color: #fff;
+  font-size: 6rem;
+  text-shadow: 3px 3px 0px rgb(143, 75, 46);
+}
+
+.heading p {
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.heading p a {
+  color: #ff7800;
+  padding-right: .5rem;
+}
+
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: italic;
+}
+#productos {
+  display: flex;
+  padding: 20px;
+}
+
+.categorias {
+  width: 20%;
+  margin-right: 30px;
+}
+
+.categorias ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categorias ul li {
+  margin-bottom: 10px;
+}
+
+.categorias ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+.categorias ul li a:hover {
+  background-color: #b3d9ff;
+}
+
+.productos-container {
+  width: 75%;
+}
+
+
+.productos-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.productos-list {
+  display: none;
+  /* Por defecto oculto */
+}
+
+.productos-list.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.producto {
+  width: 24%;
+  /* Reduce el ancho para maximizar el espacio disponible */
+  margin: 5px;
+  /* Reduce los márgenes a solo 5px alrededor */
+  padding: 5px;
+  /* Reduce el padding interno */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  /* Incluye el padding en el cálculo del ancho total */
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.producto:hover {
+  transform: scale(1.02);
+  /* Aumenta el tamaño al 105% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin: 5px 0;
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+
+}
+
+.producto button {
+  margin-top: 5px;
+  font-size: 2rem;
+  background-color: #ff7800;
+  border: #ff7800;
+}
+
+.producto button:hover {
+  margin-top: 10px;
+  font-size: 2rem;
+  background-color: #ff7800;
+  border: #ff7800;
+}
+
+
+.modal-body img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-body p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modal-footer button{
+  font-size: 2rem;
+}
+#bebidasCalientes.active {
+  display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+  #productos {
+    display: block;
+    padding: 10px;
+  }
+
+  .categorias {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .categorias ul li {
+    margin-bottom: 8px;
+  }
+
+  .categorias ul li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .productos-container {
+    width: 100%;
+  }
+
+  .productos-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .productos-list {
+    justify-content: center;
+  }
+
+  .producto {
+    width: 45%;
+    margin: 0 2.5% 20px 2.5%;
+  }
+
+  .producto img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #productos {
+    display: flex;
+    padding: 15px;
+  }
+
+  .categorias {
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .productos-container {
+    width: 70%;
+  }
+
+  .productos-container h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .producto {
+    width: 40%;
+    margin: 0 2.5% 20px 2.5%;
+  }
+
+  .producto img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Mantener el diseño original para pantallas más grandes */
+@media (min-width: 1025px) {
+  #productos {
+    display: flex;
+    padding: 20px;
+  }
+
+  .categorias {
+    width: 20%;
+    margin-right: 30px;
+  }
+
+  .productos-container {
+    width: 75%;
+  }
+
+  .producto {
+    width: 30%;
+    margin: 0 1.5% 20px 1.5%;
+  }
+}
