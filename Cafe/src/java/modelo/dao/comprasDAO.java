@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import modelo.dto.Pedido;
 import modelo.dto.compras;
+import modelo.dto.metodo_compra;
 public class comprasDAO {
     private Connection cnx;
     
@@ -32,7 +33,7 @@ public class comprasDAO {
                 new Pedido(rs.getString("id_pedido")),        
                 rs.getDate("fecha_hora"),
                 rs.getDouble("monto_total"),
-                new metodo_compraDAO(rs.getString("id_metodo"));
+                new metodo_compra(rs.getString("id_metodo")));
                 lista.add(c);
             }
             rs.close();

@@ -4,15 +4,17 @@
  */
 package modelo.dto;
 
+import java.util.Date;
+
 /**
  *
  * @author yiann
  */
-class estado_reserva {
+public class estado_reserva {
     private String id_estado;
     private String nombre;
 
-    public estado_reserva() {
+    public estado_reserva(String string, Pedido pedido, Date date, double aDouble, metodo_compra metodo_compra) {
     }
 
     public estado_reserva(String id_estado, String nombre) {

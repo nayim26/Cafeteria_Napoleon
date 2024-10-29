@@ -14,7 +14,7 @@ public class cliente {
     private String correo;
     private int telefono;
 
-    public cliente() {
+    public cliente(String string) {
     }
 
     public cliente(String id_cliente, String nombre, String correo, int telefono) {

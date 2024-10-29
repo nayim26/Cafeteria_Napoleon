@@ -43,8 +43,7 @@ public class reservasDAO {
                 rs.getString("id_reserva"),    
                 new cliente(rs.getString("id_cliente")), 
                 rs.getDate("fecha_hora"),
-                rs.getInt("nro_personas"),
-                rs.getInt("estado"));
+                rs.getInt("nro_personas"));
                 lista.add(r);
             }
             rs.close();

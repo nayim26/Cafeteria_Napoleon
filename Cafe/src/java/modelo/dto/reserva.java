@@ -17,7 +17,7 @@ public class reserva {
     private int nro_personas;
     private estado_reserva estado;
 
-    public reserva() {
+    public reserva(String string, cliente cliente, Date date, int aInt) {
     }
 
     public reserva(String id_reserva, cliente id_cliente, Date fecha_hora, int nro_personas, estado_reserva estado) {

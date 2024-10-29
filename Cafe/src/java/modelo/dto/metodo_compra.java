@@ -8,11 +8,11 @@ package modelo.dto;
  *
  * @author yiann
  */
-class metodo_compra {
+public class metodo_compra {
     private String id_metodo;
     private String nombre;
 
-    public metodo_compra() {
+    public metodo_compra(String string) {
     }
 
     public metodo_compra(String id_metodo, String nombre) {

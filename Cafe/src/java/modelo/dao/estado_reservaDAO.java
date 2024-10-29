@@ -11,33 +11,36 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import modelo.dto.*;
+import modelo.dto.Pedido;
+import modelo.dto.compras;
+import modelo.dto.estado_reserva;
+import modelo.dto.metodo_compra;
 
 /**
  *
  * @author yiann
  */
-public class metodo_compraDAO {
+public class estado_reservaDAO {
     private Connection cnx;
     
-    public metodo_compraDAO(String string){
+    public estado_reservaDAO(){
         cnx=new ConectaDB().getConexion();
     }
     
-    public List<metodo_compra> getList() {
+    public List<estado_reserva> getList() {
         PreparedStatement ps;
         ResultSet rs;
-        String cadSQL="select id_metodo, nombre from metodo_compra";
-        List<metodo_compra> lista= null;
+        String cadSQL="select id_estado, nombre from estado_reserva";
+        List<estado_reserva> lista= null;
         try {
             ps = cnx.prepareStatement(cadSQL);
             rs = ps.executeQuery();
             lista = new ArrayList<>();
             while (rs.next()) {
-                metodo_compra m = new metodo_compra(
-                rs.getString("id_metodo"),
-                rs.getString("nombre"));
-                lista.add(m);
+                estado_reserva er = new estado_reserva(
+                rs.getString("id_estado"),
+                  rs.getString("nombre"));
+                lista.add(er);
             }
             rs.close();
         } catch (SQLException ex) {
