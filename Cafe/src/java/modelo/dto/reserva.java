@@ -4,6 +4,7 @@
  */
 package modelo.dto;
 
+import java.sql.Time;
 import java.util.Date;
 
 /**
@@ -11,67 +12,121 @@ import java.util.Date;
  * @author yiann
  */
 public class reserva {
-    private String id_reserva;
-    private cliente id_cliente;
-    private Date fecha_hora;
-    private int nro_personas;
-    private estado_reserva estado;
+//    private String id_reserva;
+//    private cliente id_cliente;
+    private int personas;
+    private Date fecha;
+    private Time hora;
+    private String nombre;
+    private String apellido;
+    private String email;
+    private int telefono;
+    private String comentario;
+    private String mesa;
+    private String alergias;
+//    private estado_reserva estado;
 
-    public reserva(String string, cliente cliente, Date date, int aInt) {
+    public reserva() {
     }
 
-    public reserva(String id_reserva, cliente id_cliente, Date fecha_hora, int nro_personas, estado_reserva estado) {
-        this.id_reserva = id_reserva;
-        this.id_cliente = id_cliente;
-        this.fecha_hora = fecha_hora;
-        this.nro_personas = nro_personas;
-        this.estado = estado;
+    public reserva(int personas, Date fecha, Time hora, String nombre, String apellido, String email, int telefono, String comentario, String mesa, String alergias) {
+        this.personas = personas;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.telefono = telefono;
+        this.comentario = comentario;
+        this.mesa = mesa;
+        this.alergias = alergias;
     }
 
-    public String getId_reserva() {
-        return id_reserva;
+    public int getPersonas() {
+        return personas;
     }
 
-    public void setId_reserva(String id_reserva) {
-        this.id_reserva = id_reserva;
+    public void setPersonas(int personas) {
+        this.personas = personas;
     }
 
-    public cliente getId_cliente() {
-        return id_cliente;
+    public Date getFecha() {
+        return fecha;
     }
 
-    public void setId_cliente(cliente id_cliente) {
-        this.id_cliente = id_cliente;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 
-    public Date getFecha_hora() {
-        return fecha_hora;
+    public Time getHora() {
+        return hora;
     }
 
-    public void setFecha_hora(Date fecha_hora) {
-        this.fecha_hora = fecha_hora;
+    public void setHora(Time hora) {
+        this.hora = hora;
     }
 
-    public int getNro_personas() {
-        return nro_personas;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNro_personas(int nro_personas) {
-        this.nro_personas = nro_personas;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public estado_reserva getEstado() {
-        return estado;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setEstado(estado_reserva estado) {
-        this.estado = estado;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public String getMesa() {
+        return mesa;
+    }
+
+    public void setMesa(String mesa) {
+        this.mesa = mesa;
+    }
+
+    public String getAlergias() {
+        return alergias;
+    }
+
+    public void setAlergias(String alergias) {
+        this.alergias = alergias;
     }
 
     @Override
     public String toString() {
-        return getId_reserva();
+        return getNombre();
     }
-    
+
+
     
 }
