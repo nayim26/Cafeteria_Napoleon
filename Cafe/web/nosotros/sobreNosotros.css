@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rye&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.heading {
+    background: url(../img/fondoParis.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.heading h1 {
+    color: #fff;
+    font-size: 6rem;
+    text-shadow: 3px 3px 0px rgb(143, 75, 46);
+}
+
+.heading p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.heading p a {
+    color: #ff7800;
+    padding-right: .5rem;
+}
+
+/*nosotros*/
+
+.content h3 {
+    font-family: "Nunito", sans-serif;
+
+}
+
+.about {
+    padding: 100px;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .image {
+    flex: 1 1 32rem;
+}
+
+.about .row .image img {
+    width: 80%;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row .content {
+    flex: 1 1 50rem;
+}
+
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: #130f40;
+}
+
+.about .row .content h3 span {
+    color: #522b2b;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 2rem 0;
+    line-height: 2;
+}
+/* Contenedor principal de cada sección */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
+    align-items: center;
+    padding: 40px;
+}
+
+/* Sección de Misión */
+.mision {
+    background: #E8D3C3 ;
+    margin-bottom: 2rem;
+}
+
+.tituloMision h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
+}
+
+.tituloMision p {
+    color: white;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Imagen de Misión */
+.imagenMision img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Sección de Visión */
+.vision {
+    background: rgba(219, 218, 217, 0.993);
+    margin-bottom: 2rem;
+}
+
+.tituloVision h1 {
+    color: #000000;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
+}
+
+.tituloVision p {
+    color: #504e4e;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Imagen de Visión */
+.imagenVision img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+
+/*
+        .mision{
+    background: rgba(154, 101, 26, 0.689);
+    padding: 50px;
+}
+
+.tituloMision h1{
+    color: #fff;
+    font-size: 10rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+.textoMision{
+    padding:0 80px 0 80px;
+}
+.textoMision p{
+    color: #d6d6d6;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.vision{
+    background: rgba(219, 218, 217, 0.993);
+    padding: 50px;
+    margin-top: 6rem;
+}
+
+.tituloVision h1{
+    color: #000000;
+    font-size: 10rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+.textoVision{
+    padding:0 80px 0 80px;
+}
+.textoVision p{
+    color: #504e4e;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+*/
+
+/*-------------*/
+.steps {
+    margin: 50px;
+}
+
+.steps .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.steps .box-container .box {
+    flex: 1 1 25rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.steps .box-container .box img {
+    width: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 1rem solid #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.steps .box-container .box img:hover {
+
+    transform: scale(1.1);
+
+}
+
+.steps .box-container .box h3 {
+    font-size: 2.4rem;
+    color: #130f40;
+    padding: rem;
+}
+
+.tituloValores h1 {
+    color: #854a4a;
+    font-size: 10rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
